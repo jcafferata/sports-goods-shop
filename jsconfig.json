@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "checkJs": true,
+    "paths": {
+      "@images/*": ["./assets/images/*"],
+      "@fonts/*": ["./assets/fonts/*"],
+      "@styles/*": ["./assets/styles/*"],
+      "@constants/*": ["./constants/*"],
+      "@components/*": ["./components/*"],
+      "@elements/*": ["./components/elements/*"],
+      "@pages/*": ["./pages/*"],
+      "@hooks/*": ["./hooks/*"]
+    }
+  },
+  "include": ["**/*.js", "**/*.jsx"]
+}

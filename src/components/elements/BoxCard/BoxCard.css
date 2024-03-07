@@ -1,0 +1,25 @@
+.boxCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--section-desktop-padding) 0;
+
+  .boxCard__content {
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--web-body-desktop);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .boxCard {
+    padding: 4rem var(--section-tablet-padding);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .boxCard {
+    padding: 4rem var(--section-mobile-padding);
+  }
+}

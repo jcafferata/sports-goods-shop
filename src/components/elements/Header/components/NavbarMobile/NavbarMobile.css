@@ -1,0 +1,54 @@
+.navbarMobile {
+  display: none;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--web-color-alternative-background);
+
+  .navbarMobile__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+    .navbarMobile__body__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 5.375rem;
+
+      .navbarMobile__body__menu-buttom {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    .navbarMobile__body__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100dvh;
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbarMobile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.6875rem var(--web-tablet-padding);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbarMobile {
+    padding: 0.6875rem var(--web-mobile-padding);
+  }
+}

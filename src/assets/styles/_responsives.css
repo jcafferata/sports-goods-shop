@@ -1,0 +1,8 @@
+:root {
+  --responsive-mobile-s: 375px;
+  --responsive-mobile: 480px;
+  --responsive-tablet: 768px;
+  --responsive-laptop-s: 992px;
+  --responsive-laptop-m: 1200px;
+  --responsive-laptop-l: 1440px;
+}

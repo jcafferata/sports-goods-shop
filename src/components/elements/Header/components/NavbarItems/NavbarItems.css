@@ -1,0 +1,32 @@
+.navbarItems {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: var(--web-header-width);
+  gap: 2.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 0;
+
+  a {
+    color: var(--color-white);
+
+    &:hover {
+      color: var(--color-brand);
+    }
+  }
+
+  .navbarItems-active {
+    color: var(--color-brand);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbarItems {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2.75rem;
+    padding-top: 2rem;
+  }
+}

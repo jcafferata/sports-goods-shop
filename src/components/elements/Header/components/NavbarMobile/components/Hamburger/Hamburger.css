@@ -1,0 +1,18 @@
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.375rem;
+  height: 2.1875rem;
+
+  img {
+    width: 1.3125rem;
+    height: 1.3125rem;
+  }
+
+  .hamburger-icon {
+    color: var(--color-white);
+    width: 1.375rem;
+    height: 2.1875rem;
+  }
+}

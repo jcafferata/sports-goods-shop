@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--web-color-alternative-background);
+  height: var(--web-footer-height);
+
+  p {
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 0.225rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}

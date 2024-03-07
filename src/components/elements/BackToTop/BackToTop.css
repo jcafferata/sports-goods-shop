@@ -1,0 +1,34 @@
+.backToTop {
+  p {
+    position: fixed;
+    left: 50%;
+    margin-left: 39rem;
+    bottom: 1.25rem;
+    padding: 1rem 0.3rem 1rem 0.4rem;
+    text-align: center;
+    transition: visibility 0.2s ease-out;
+    visibility: hidden;
+    width: 2rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .show {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .backToTop {
+    p {
+      margin-left: 46.5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .backToTop {
+    display: none;
+  }
+}

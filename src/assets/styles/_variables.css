@@ -1,0 +1,23 @@
+:root {
+  --web-width-desktop: 75rem;
+  --web-body-desktop: 74rem;
+  --web-max-width-desktop: 120rem;
+  --web-padding: 7rem;
+  --web-footer-height: 4rem;
+  --web-header-width: 62.5rem;
+  --web-header-height: 4rem;
+  --web-min-height: calc(100vh - var(--web-header-height));
+  --web-min-height-main: calc(100dvh - var(--web-footer-height));
+
+  /* Desktop */
+  --web-desktop-padding: 2.8125rem;
+  --section-desktop-padding: 4rem;
+
+  /* Tablet */
+  --web-tablet-padding: 2.5rem;
+  --section-tablet-padding: 3rem;
+
+  /* Mobile */
+  --web-mobile-padding: 1.375rem;
+  --section-mobile-padding: 1.5rem;
+}

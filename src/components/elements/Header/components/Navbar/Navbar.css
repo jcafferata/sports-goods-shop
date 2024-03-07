@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--web-header-height);
+  width: 100%;
+  padding-left: var(--web-padding);
+  padding-right: var(--web-padding);
+  position: fixed;
+  z-index: 100;
+  background-color: var(--web-color-alternative-background);
+}
+
+.navbar__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--web-body-desktop);
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+}
