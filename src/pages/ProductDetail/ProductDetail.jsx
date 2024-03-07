@@ -11,6 +11,7 @@ import { PRODUCTS } from "@constants/routes";
 import Breadcrumb from "@components/elements/Breadcrumb";
 import ButtonIcon from "@components/elements/ButtonIcon";
 import "./ProductDetail.css";
+import FacebookCard from "@components/FacebookCard";
 
 const ProductDetail = () => {
   let { slug } = useParams();
@@ -38,6 +39,12 @@ const ProductDetail = () => {
           />
         </div>
       </Card>
+
+      <div className="adsList">
+        <FacebookCard />
+        <FacebookCard />
+        <FacebookCard />
+      </div>
     </BoxCard>
   );
 };

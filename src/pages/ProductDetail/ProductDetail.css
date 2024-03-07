@@ -3,3 +3,18 @@
   align-items: center;
   height: 3rem;
 }
+
+.adsList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .adsList {
+    gap: 2rem;
+  }
+}
