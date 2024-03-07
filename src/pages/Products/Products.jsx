@@ -11,7 +11,7 @@ const Products = () => {
 
   return (
     <BoxCard>
-      <Card>
+      <Card direction="column">
         <Title>
           <FontAwesomeIcon
             aria-label="Products"

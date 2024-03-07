@@ -1,11 +1,16 @@
 import Title from "@components/elements/Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRectangleList } from "@fortawesome/free-solid-svg-icons";
+import {
+  faRectangleList,
+  faCirclePlus,
+} from "@fortawesome/free-solid-svg-icons";
 import Card from "@components/elements/Card";
 import BoxCard from "@components/elements/BoxCard";
 import { useParams } from "react-router";
 import { PRODUCTS } from "@constants/routes";
 import Breadcrumb from "@components/elements/Breadcrumb";
+import ButtonIcon from "@components/elements/ButtonIcon";
+import "./ProductDetail.css";
 
 const ProductDetail = () => {
   let { slug } = useParams();
@@ -13,15 +18,25 @@ const ProductDetail = () => {
   return (
     <BoxCard>
       <Card>
-        <Breadcrumb to={PRODUCTS} title="Back to products" />
-        <Title>
-          <FontAwesomeIcon
-            aria-label="Products"
-            size="xs"
-            icon={faRectangleList}
+        <div>
+          <Breadcrumb to={PRODUCTS} title="Back to products" />
+          <Title>
+            <FontAwesomeIcon
+              aria-label="Products"
+              size="xs"
+              icon={faRectangleList}
+            />
+            {slug}
+          </Title>
+        </div>
+        <div className="buttons">
+          <ButtonIcon
+            title="New Advertisement"
+            icon={faCirclePlus}
+            size="3x"
+            onClick={[]}
           />
-          {slug}
-        </Title>
+        </div>
       </Card>
     </BoxCard>
   );
