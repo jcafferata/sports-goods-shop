@@ -1,0 +1,30 @@
+.table {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  border-collapse: collapse;
+  cursor: pointer;
+  width: 100%;
+}
+
+.table thead th {
+  padding: 0.5rem;
+  background-color: var(--web-color-alternative-background);
+  color: var(--color-white);
+  font-weight: 200;
+}
+
+.table tbody td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--web-color-alternative-background);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table .table__column p {
+  width: 40rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

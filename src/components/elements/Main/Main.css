@@ -4,6 +4,4 @@
   align-items: flex-start;
   padding-top: var(--web-header-height);
   min-height: var(--web-min-height-main);
-  width: 100%;
-  padding-bottom: var(--web-padding);
 }

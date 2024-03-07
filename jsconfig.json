@@ -7,12 +7,14 @@
     "noEmit": true,
     "checkJs": true,
     "paths": {
+      "@data/*": ["./data/*"],
       "@images/*": ["./assets/images/*"],
       "@fonts/*": ["./assets/fonts/*"],
       "@styles/*": ["./assets/styles/*"],
       "@constants/*": ["./constants/*"],
       "@components/*": ["./components/*"],
       "@elements/*": ["./components/elements/*"],
+      "@services/*": ["./services/*"],
       "@pages/*": ["./pages/*"],
       "@hooks/*": ["./hooks/*"]
     }

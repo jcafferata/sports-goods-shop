@@ -1,12 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
-import { HOME, PRODUCTS } from "@constants/routes";
+import { Link, useLocation, matchPath } from "react-router-dom";
+import { HOME, PRODUCTS, PRODUCTS_DETAIL } from "@constants/routes";
 import "./NavbarItems.css";
 
-const HandleActive = (path) => {
+const HandleActive = (pathUrl) => {
   const { pathname } = useLocation();
-  console.log(pathname);
-
-  return pathname === path ? "navbarItems-active" : "";
+  return !!matchPath({ path: pathUrl }, pathname) ? "navbarItems-active" : "";
 };
 
 const NavbarItems = ({ toggle }) => (
@@ -19,7 +17,7 @@ const NavbarItems = ({ toggle }) => (
       Home
     </Link>
     <Link
-      className={HandleActive(PRODUCTS)}
+      className={`${HandleActive(PRODUCTS)} ${HandleActive(PRODUCTS_DETAIL)}`}
       onClick={() => toggle && toggle(false)}
       to={PRODUCTS}
     >
