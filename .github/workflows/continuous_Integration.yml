@@ -10,9 +10,9 @@ jobs:
     needs: [Setup, Analyze]
     uses: ./.github/workflows/buildCode.yml
 
-  # Test:
-  #   needs: Setup
-  #   uses: ./.github/workflows/testCode.yml
+  Test:
+    needs: Setup
+    uses: ./.github/workflows/testCode.yml
 
   Analyze:
     needs: Setup

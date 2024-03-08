@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
@@ -28,36 +28,37 @@ Your app is ready to be deployed!
 
 ### `yarn lint`
 
-To see linting issues.\
+To see linting issues.
 
 ### `yarn lint-and-fix`
 
-To automatically fix linting issues (when possible).\
+To automatically fix linting issues (when possible).
 
 ### `yarn prettier-check`
 
-To see style issues.\
+To see style issues.
 
 ### `yarn prettier-format`
 
-To fix style issues.\
+To fix style issues.
 
 ## Comments
 
 ### `Plus Requirements`
 
 -Error404 view.\
--Github actions.\
+-Github actions.
 
 ### `Misssing Requirements`
 
 -Update view.\
 -Delete view.\
 -Notifications modals.\
--More tests.\
+-More tests definitely.
 
 ### `Last Comments`
 
 I have tried to do my best. Focusing on those points that I usually take into account: Order, Simplicity, Styles and Reusable code.\
 Use only CSS to complete the entire project.\
-Mock some posts in json files for practicality of tests.\
+Mock some posts in json files for practicality of testing.\
+I added a couple of tests to show usage. I preferred to dedicate my time to other things in this challenge.
