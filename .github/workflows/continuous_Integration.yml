@@ -1,0 +1,19 @@
+name: Continuous Integration App
+
+on: push
+
+jobs:
+  Setup:
+    uses: ./.github/workflows/setupNode.yml
+
+  Build:
+    needs: [Setup, Analyze]
+    uses: ./.github/workflows/buildCode.yml
+
+  # Test:
+  #   needs: Setup
+  #   uses: ./.github/workflows/testCode.yml
+
+  Analyze:
+    needs: Setup
+    uses: ./.github/workflows/analyzeCode.yml

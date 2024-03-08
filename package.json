@@ -21,7 +21,11 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "lint-and-fix": "eslint . --ext .js --ext .jsx --fix",
+    "prettier-format": "prettier --write 'src/**/*.{jsx,js,css}'",
+    "prettier-check": "prettier --check 'src/**/*.{jsx,js,css}'"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +47,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.0",
+    "prettier": "^3.2.5",
     "react-router-dom": "^6.22.2",
     "slugify": "^1.6.6"
   }
