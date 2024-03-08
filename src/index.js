@@ -7,11 +7,14 @@ import "@styles/_fonts.css";
 import "@styles/_variables.css";
 import "@styles/_responsives.css";
 import "@styles/global.css";
+import { ProductProvider } from "@context/productProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProductProvider>
+      <App />
+    </ProductProvider>
   </React.StrictMode>,
 );
 

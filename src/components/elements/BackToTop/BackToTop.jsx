@@ -22,7 +22,7 @@ const BackToTop = () => {
   return (
     <div className="backToTop">
       <p onClick={scrollToTop} className={verticalPosition > 600 ? "show" : ""}>
-        <FontAwesomeIcon icon={faCircleArrowDown} width={35} height={35} />
+        <FontAwesomeIcon icon={faCircleArrowDown} size="2x" />
       </p>
     </div>
   );

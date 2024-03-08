@@ -12,9 +12,12 @@ import Breadcrumb from "@components/elements/Breadcrumb";
 import ButtonIcon from "@components/elements/ButtonIcon";
 import "./ProductDetail.css";
 import FacebookCard from "@components/FacebookCard";
+import useProductAds from "@hooks/useProductAds";
 
 const ProductDetail = () => {
-  let { slug } = useParams();
+  let { id, slug } = useParams();
+  const { getProductAds } = useProductAds();
+  const listAds = getProductAds(id);
 
   return (
     <BoxCard>
@@ -35,15 +38,16 @@ const ProductDetail = () => {
             title="New Advertisement"
             icon={faCirclePlus}
             size="3x"
-            onClick={[]}
+            onClick={() => {}}
           />
         </div>
       </Card>
 
       <div className="adsList">
-        <FacebookCard />
-        <FacebookCard />
-        <FacebookCard />
+        {listAds &&
+          listAds.map((item) => {
+            return <FacebookCard item={item} key={item.id} />;
+          })}
       </div>
     </BoxCard>
   );

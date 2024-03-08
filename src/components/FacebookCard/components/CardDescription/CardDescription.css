@@ -1,0 +1,8 @@
+.cardDescription {
+  color: var(--color-black);
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1rem;
+  word-break: break-word;
+  padding: 0.9rem;
+}
