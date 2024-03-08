@@ -13,14 +13,27 @@ import ButtonIcon from "@components/elements/ButtonIcon";
 import "./ProductDetail.css";
 import FacebookCard from "@components/FacebookCard";
 import useProductAds from "@hooks/useProductAds";
+import Modal from "@components/elements/Modal";
+import FormAds from "@components/FormAds";
+import useFormProductAds from "@hooks/useFormProductAds";
 
 const ProductDetail = () => {
   let { id, slug } = useParams();
   const { getProductAds } = useProductAds();
+  const { openModal, setOpenModal, handleSaveForm, handleSubmit } =
+    useFormProductAds(id);
   const listAds = getProductAds(id);
 
   return (
     <BoxCard>
+      <Modal openModal={openModal} closeModal={() => setOpenModal(false)}>
+        <FormAds
+          handleSaveForm={handleSaveForm}
+          handleSubmit={handleSubmit}
+          productName={slug}
+          title="Product Ads | Create"
+        />
+      </Modal>
       <Card>
         <div>
           <Breadcrumb to={PRODUCTS} title="Back to products" />
@@ -38,7 +51,7 @@ const ProductDetail = () => {
             title="New Advertisement"
             icon={faCirclePlus}
             size="3x"
-            onClick={() => {}}
+            onClick={() => setOpenModal(true)}
           />
         </div>
       </Card>

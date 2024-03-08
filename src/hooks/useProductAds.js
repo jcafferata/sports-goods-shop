@@ -8,7 +8,9 @@ const useProductAds = () => {
     return getProductsAdsByProductId(productId);
   };
 
-  return { getProductAds };
+  return {
+    getProductAds,
+  };
 };
 
 export default useProductAds;

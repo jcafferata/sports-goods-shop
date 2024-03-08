@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  width: 10rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.5rem;
+  background: var(--web-color-alternative-background);
+
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}

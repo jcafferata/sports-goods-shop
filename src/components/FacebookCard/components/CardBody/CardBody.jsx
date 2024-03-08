@@ -9,7 +9,11 @@ const CardBody = ({ item }) => {
         {item.images &&
           item.images.map((img, index) => {
             return (
-              <img src={img} alt={`${item.headline} gallery - item ${index}`} />
+              <img
+                src={img}
+                alt={`${item.headline} gallery - item ${index}`}
+                key={index}
+              />
             );
           })}
       </div>
@@ -26,7 +30,13 @@ const CardBody = ({ item }) => {
           </span>
         </div>
         <div className="cardBody__description_button">
-          <button>Download</button>
+          <button
+            onClick={() => {
+              window.open(item.link, "_blank");
+            }}
+          >
+            Download
+          </button>
         </div>
       </div>
     </div>
