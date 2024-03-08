@@ -1,7 +1,7 @@
 import "./CardBody.css";
 
 const CardBody = ({ item }) => {
-  const typeGallery = item.images.length === 1 ? "" : "cardBody__gallery-list";
+  const typeGallery = item.images?.length === 1 ? "" : "cardBody__gallery-list";
 
   return (
     <div className="cardBody">

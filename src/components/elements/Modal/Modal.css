@@ -16,13 +16,6 @@
     right: 2rem;
     cursor: pointer;
     z-index: 1;
-
-    /* @include responsives.resolution__mobile {
-      top: 2rem;
-      right: 2rem;
-      width: 22px;
-      height: 22px;
-    } */
   }
 }
 

@@ -61,4 +61,5 @@ To fix style issues.
 I have tried to do my best. Focusing on those points that I usually take into account: Order, Simplicity, Styles and Reusable code.\
 Use only CSS to complete the entire project.\
 Mock some posts in json files for practicality of testing.\
-I added a couple of tests to show usage. I preferred to dedicate my time to other things in this challenge.
+I added a couple of tests to show usage. I preferred to dedicate my time to other things in this challenge.\
+I added a HOME page to show better the navigation of the navbar.

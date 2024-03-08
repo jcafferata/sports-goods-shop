@@ -44,9 +44,6 @@ const FormAds = ({ title, productName, handleSaveForm, handleSubmit }) => (
           placeholder="image links ( more than one it's possible with enters )"
           id="images"
           required
-          value="http://dummyimage.com/500x500.png/cc0000/ffffff
-          http://dummyimage.com/500x500.png/fb9977/ffffff
-          http://dummyimage.com/500x500.png/cccccc/ffffff"
         />
       </div>
 
