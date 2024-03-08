@@ -7,7 +7,7 @@ jobs:
   build:
     name: "[Build Core]"
     runs-on: ubuntu-latest
-    if: contains('refs/heads/main', github.ref)
+    if: contains('refs/heads/master', github.ref)
     steps:
       - uses: actions/checkout@v3
 
